@@ -6,19 +6,25 @@ import { Component,OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
-  title = "Abu Suraj";
-  roll = 0;
-  getMax(a:number, b: number, c: number){
-   if(a>b){
-    if(a>c){return a;}
-    else return c;
-   }
-   else{
-    if(b>c) return b;
-    else return c;
-   }
+  showtext = false;
+  toggleText():void{
+    this.showtext = !this.showtext
   }
 }
+// export class AppComponent{
+//   title = "Abu Suraj";
+//   roll = 0;
+//   getMax(a:number, b: number, c: number){
+//    if(a>b){
+//     if(a>c){return a;}
+//     else return c;
+//    }
+//    else{
+//     if(b>c) return b;
+//     else return c;
+//    }
+//   }
+// }
 // export class AppComponent implements OnInit {
 //   // title = 'v-series';
 //   intervalSub: any ;
